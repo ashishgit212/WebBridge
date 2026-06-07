@@ -5,27 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebBridge - B.Tech CSE Freshers Hub</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
 
-    <header class="border-b border-gray-800 bg-gray-900 sticky top-0 z-50">
+    <header class="border-b border-gray-800 bg-gray-900/80 backdrop-blur sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <h1 class="text-2xl font-bold tracking-tight text-indigo-400">Web<span class="text-emerald-400">Bridge</span></h1>
+            <h1 class="text-2xl font-black tracking-tight text-indigo-400">Web<span class="text-emerald-400">Bridge</span></h1>
             <nav class="flex gap-6 text-sm font-medium text-gray-400">
-                <a href="#jobs" class="hover:text-white transition">Job Board</a>
-                <a href="#community" class="hover:text-white transition">Community Discussions</a>
-                <a href="#monetize" class="text-emerald-400 hover:text-emerald-300 font-semibold transition">Post a Featured Job</a>
+                <a href="#jobs" class="hover:text-white transition">Active Jobs</a>
+                <a href="#community" class="hover:text-white transition">Community</a>
+                <a href="#monetize" class="text-emerald-400 hover:text-emerald-300 font-semibold transition">Recruiter Pack</a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-8 space-y-16">
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-20">
 
         <section class="text-center max-w-3xl mx-auto space-y-4">
-            <span class="px-3 py-1 text-xs font-semibold bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">Built for B.Tech CSE Graduates</span>
-            <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Bridge the Gap from Campus to Career</h2>
-            <p class="text-gray-400 text-lg">A localized platform where unplaced or fresher engineers connect, share active walk-in updates, and collaborate on code projects.</p>
+            <span class="px-3 py-1 text-xs font-semibold bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">Exclusively for B.Tech CSE Graduates</span>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Connecting Freshers with Live Opportunities</h2>
+            <p class="text-gray-400 text-base sm:text-lg">A community platform for unplaced engineering freshers to collaborate on open-source code projects, track off-campus walk-in drives, and get hired.</p>
         </section>
 
         <hr class="border-gray-800">
@@ -39,24 +38,24 @@
                 <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md font-medium border border-emerald-500/20 animate-pulse">Updated Live</span>
             </div>
 
-            <div class="grid gap-4 md:grid-cols-2">
-                <div class="p-5 rounded-xl bg-gradient-to-br from-indigo-950/40 to-gray-900 border border-indigo-500/40 shadow-md relative">
-                    <span class="absolute top-4 right-4 bg-indigo-500 text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">Featured</span>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="p-6 rounded-xl bg-gradient-to-br from-indigo-950/30 to-gray-900 border border-indigo-500/30 shadow-lg relative">
+                    <span class="absolute top-4 right-4 bg-indigo-500 text-white text-[10px] uppercase font-black tracking-widest px-2 py-0.5 rounded">Featured</span>
                     <span class="text-xs text-indigo-400 font-mono font-semibold">TechCorp Solutions</span>
-                    <h4 class="text-lg font-bold text-white mt-1">Associate Software Engineer (Python/Django)</h4>
-                    <p class="text-sm text-gray-400 mt-2">CTC: ₹6.5 LPA | Experience: 0-1 Year | Remote / Pune</p>
+                    <h4 class="text-xl font-bold text-white mt-1">Associate Software Engineer (Python)</h4>
+                    <p class="text-sm text-gray-400 mt-2">CTC: ₹6.5 LPA | Experience: 0-1 Year | Pune</p>
                     <div class="mt-4 flex gap-2">
-                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Fast-Track</span>
-                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Immediate Joiner</span>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Fast-Track</span>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Immediate Joiner</span>
                     </div>
                 </div>
 
-                <div class="p-5 rounded-xl bg-gray-900 border border-gray-800 hover:border-gray-700 transition">
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-gray-700 transition">
                     <span class="text-xs text-emerald-400 font-mono font-semibold">Innovate Labs</span>
-                    <h4 class="text-lg font-bold text-white mt-1">QA Automation Intern (Selenium/JS)</h4>
+                    <h4 class="text-xl font-bold text-white mt-1">QA Automation Intern (Selenium)</h4>
                     <p class="text-sm text-gray-400 mt-2">Stipend: ₹25k/mo | Duration: 6 Months | Bengaluru</p>
                     <div class="mt-4 flex gap-2">
-                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Walk-in Drive</span>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Walk-in Drive</span>
                     </div>
                 </div>
             </div>
@@ -67,14 +66,14 @@
         <section id="community" class="space-y-6">
             <div>
                 <h3 class="text-2xl font-bold text-white">Peer Communication Hub</h3>
-                <p class="text-sm text-gray-400">Discuss interview patterns, technical problem loops, and mock interview rooms.</p>
+                <p class="text-sm text-gray-400">Discuss interview patterns, technical issues, and upcoming placement drives.</p>
             </div>
             
-            <div class="p-8 text-center rounded-xl border border-dashed border-gray-800 bg-gray-950/30 space-y-4">
-                <p class="text-gray-300 max-w-md mx-auto text-sm">To ensure real-time interaction without maintaining heavy servers, our community thrives inside GitHub Discussions and live messaging server hooks.</p>
+            <div class="p-8 text-center rounded-xl border border-dashed border-gray-800 bg-gray-950/20 space-y-4">
+                <p class="text-gray-300 max-w-md mx-auto text-sm leading-relaxed">To stay highly scalable without requiring background databases, our live chat and forum communications run entirely through decentralized developer handles.</p>
                 <div class="flex flex-wrap justify-center gap-4 pt-2">
-                    <a href="#" class="px-4 py-2 text-xs font-semibold bg-gray-800 hover:bg-gray-700 text-white rounded-lg border border-gray-700 transition">Open GitHub Discussions</a>
-                    <a href="#" class="px-4 py-2 text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition">Join Live Discord Server</a>
+                    <a href="#" class="px-4 py-2 text-xs font-semibold bg-gray-800 hover:bg-gray-700 text-white rounded-lg border border-gray-700 transition shadow">Open GitHub Discussions</a>
+                    <a href="#" class="px-4 py-2 text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition shadow">Join Live Discord Server</a>
                 </div>
             </div>
         </section>
@@ -83,39 +82,50 @@
 
         <section id="monetize" class="bg-gray-950 rounded-2xl border border-emerald-500/20 p-6 sm:p-10 space-y-8">
             <div class="max-w-2xl">
-                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wide">For Recruiters & Employers</span>
-                <h3 class="text-3xl font-black text-white mt-1">Get Premium Placement</h3>
-                <p class="text-gray-400 mt-2 text-sm leading-relaxed">Pin your hiring drive, hackathon, or junior developer position directly to the top of our job pool. Featured listings stay pinned for 7 days for maximum exposure to freshers.</p>
+                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Recruiter Launch Deal</span>
+                <h3 class="text-3xl font-black text-white mt-1">Get the 28-Day Hiring Package</h3>
+                <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                    Maximize visibility for your active recruitment drives. For a flat structural fee, you can feature **up to 5 different job postings or walk-in slots**. All posts stay prominently pinned to the very top of our job board for a full **28 days**.
+                </p>
             </div>
 
             <div class="grid md:grid-cols-5 gap-8 items-start">
-                <div class="md:col-span-3 bg-gray-900 border border-gray-800 rounded-xl p-5 space-y-4">
-                    <h4 class="text-md font-bold text-white border-b border-gray-800 pb-2">Generate Featured Post Invoice</h4>
+                <div class="md:col-span-3 bg-gray-900 border border-gray-800 rounded-xl p-6 space-y-4 shadow-sm">
+                    <h4 class="text-md font-bold text-white border-b border-gray-800 pb-3">Activate Hiring Package</h4>
                     
-                    <div class="space-y-3">
+                    <div class="space-y-4">
                         <div>
-                            <label class="block text-xs font-semibold text-gray-400 mb-1">Company & Job Title</label>
-                            <input type="text" id="jobTitleInput" placeholder="e.g., TechCorp - Junior Frontend Engineer" class="w-full bg-gray-950 text-white border border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500">
+                            <label class="block text-xs font-semibold text-gray-400 mb-1.5">Company / Agency Name</label>
+                            <input type="text" id="companyInput" placeholder="e.g., GlobalTech Solutions" class="w-full bg-gray-950 text-white border border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-gray-400 mb-1">Fixed Fee (INR)</label>
-                            <input type="number" id="amountInput" value="499" class="w-full bg-gray-950 text-white border border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500" readonly>
+                            <label class="block text-xs font-semibold text-gray-400 mb-1.5">Package Pricing (INR)</label>
+                            <div class="w-full bg-gray-950 text-emerald-400 font-mono font-bold border border-gray-800 rounded-lg px-3 py-2 text-sm select-none">
+                                ₹499.00
+                            </div>
+                            <p class="text-[11px] text-gray-500 mt-1.5">🔥 Special Offer: Includes up to 5 individual featured positions active for 28 days.</p>
                         </div>
-                        <button onclick="generateUPIInvoice()" class="w-full mt-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold py-2.5 rounded-lg text-sm transition">Generate Payment Link & QR</button>
+                        <button onclick="activatePaymentGateway()" class="w-full mt-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-black py-2.5 rounded-lg text-sm transition tracking-wide cursor-pointer shadow-md">Generate Checkout System</button>
                     </div>
                 </div>
 
-                <div id="paymentDisplayWindow" class="md:col-span-2 bg-gray-900/50 border border-gray-800 rounded-xl p-5 flex flex-col items-center justify-center min-h-[280px] text-center">
-                    <p id="placeholderText" class="text-sm text-gray-500 px-4">Fill out the job details on the left to generate your interactive UPI payment checkout gateway.</p>
+                <div id="paymentDisplayWindow" class="md:col-span-2 bg-gray-900/40 border border-gray-800 rounded-xl p-6 flex flex-col items-center justify-center min-h-[320px] text-center shadow-inner">
+                    <div id="placeholderText" class="space-y-2 px-4">
+                        <p class="text-sm font-semibold text-gray-400">Awaiting Invoice Details</p>
+                        <p class="text-xs text-gray-500">Provide your company name on the left to securely trigger your interactive local UPI transaction window.</p>
+                    </div>
                     
                     <div id="activeCheckout" class="hidden space-y-4 w-full">
-                        <p class="text-xs text-gray-400">Scan via PhonePe, GPay, or Paytm</p>
-                        <div id="qrcode" class="p-3 bg-white inline-block mx-auto rounded-xl"></div>
+                        <p class="text-xs font-medium text-gray-400">Scan QR or Use Mobile Direct Link</p>
                         
-                        <div class="space-y-2 pt-2">
-                            <span class="block text-xl font-mono font-bold text-emerald-400">₹499.00</span>
-                            <a id="upiIntentButton" href="#" class="inline-block w-full bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold py-2 rounded-lg transition">Tap to Pay via Mobile UPI App</a>
-                            <p class="text-[10px] text-gray-500">After completing payment, email your transaction ref ID alongside the job details to publish your slot.</p>
+                        <div class="p-2 bg-white rounded-xl inline-block mx-auto shadow-md">
+                            <img src="qr.jpeg" alt="PhonePe Payment QR" class="w-36 h-36 rounded-lg object-contain">
+                        </div>
+                        
+                        <div class="space-y-3 pt-1">
+                            <span class="block text-2xl font-mono font-black text-emerald-400">₹499.00</span>
+                            <a id="upiIntentButton" href="#" class="inline-block w-full bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold py-2.5 rounded-lg transition tracking-wide shadow">Tap to Pay via Mobile UPI App</a>
+                            <p class="text-[10px] text-gray-500 leading-normal px-2">After completing payment, email your transaction ID along with your job write-ups (up to 5) to launch.</p>
                         </div>
                     </div>
                 </div>
@@ -123,40 +133,32 @@
         </section>
     </main>
 
-    <footer class="border-t border-gray-800 mt-20 bg-gray-950 py-6 text-center text-xs text-gray-500">
+    <footer class="border-t border-gray-800 mt-24 bg-gray-950 py-6 text-center text-xs text-gray-500">
         <p>&copy; 2026 WebBridge Platform. All rights reserved.</p>
     </footer>
 
     <script>
-        function generateUPIInvoice() {
-            const jobDetails = document.getElementById('jobTitleInput').value.trim();
-            const baseAmount = document.getElementById('amountInput').value;
+        function activatePaymentGateway() {
+            const companyName = document.getElementById('companyInput').value.trim();
             
-            if (!jobDetails) {
-                alert('Please enter your Company Name and Job Title first.');
+            if (!companyName) {
+                alert('Please enter your Company Name to load the checkout gateway.');
                 return;
             }
 
-            // Configured with your details from your QR Code image
+            // Production properties extracted directly from your verified configuration profile 
             const payeeVPA = "shingareashish15@ybl"; 
             const payeeName = "Ashish Shivaji Shingare";
-            const transactionNote = "WebBridge Featured: " + jobDetails;
+            const amount = "499";
+            const transactionNote = "WebBridge 28Day Pack - " + companyName;
             
-            const upiUrl = `upi://pay?pa=${encodeURIComponent(payeeVPA)}&pn=${encodeURIComponent(payeeName)}&am=${encodeURIComponent(baseAmount)}&tn=${encodeURIComponent(transactionNote)}&cu=INR`;
+            // Build direct system intent mapping link for automated native application launch
+            const upiUrl = `upi://pay?pa=${encodeURIComponent(payeeVPA)}&pn=${encodeURIComponent(payeeName)}&am=${amount}&tn=${encodeURIComponent(transactionNote)}&cu=INR`;
 
-            const qrContainer = document.getElementById("qrcode");
-            qrContainer.innerHTML = "";
-
-            new QRCode(qrContainer, {
-                text: upiUrl,
-                width: 140,
-                height: 140,
-                colorDark: "#000000",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.M
-            });
-
+            // Assign destination intent pointer to the button handler
             document.getElementById('upiIntentButton').href = upiUrl;
+
+            // Flip visual interface state toggles
             document.getElementById('placeholderText').classList.add('hidden');
             document.getElementById('activeCheckout').classList.remove('hidden');
         }
