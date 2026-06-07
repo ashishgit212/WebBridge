@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Tech CSE Freshers Hub</title>
+    <title>WebBridge - B.Tech CSE Freshers Hub</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
@@ -11,7 +11,7 @@
 
     <header class="border-b border-gray-800 bg-gray-900 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <h1 class="text-2xl font-bold tracking-tight text-indigo-400">CSE<span class="text-emerald-400">Connect</span></h1>
+            <h1 class="text-2xl font-bold tracking-tight text-indigo-400">Web<span class="text-emerald-400">Bridge</span></h1>
             <nav class="flex gap-6 text-sm font-medium text-gray-400">
                 <a href="#jobs" class="hover:text-white transition">Job Board</a>
                 <a href="#community" class="hover:text-white transition">Community Discussions</a>
@@ -85,7 +85,7 @@
             <div class="max-w-2xl">
                 <span class="text-xs font-bold text-emerald-400 uppercase tracking-wide">For Recruiters & Employers</span>
                 <h3 class="text-3xl font-black text-white mt-1">Get Premium Placement</h3>
-                <p class="text-gray-400 mt-2 text-sm leading-relaxed">Pin your hiring drive, hackathon, or junior developer position directly to the top of our job pool. Featured listings stay pinned for 7 days, giving your brand maximum exposure to thousands of local B.Tech freshers actively seeking jobs.</p>
+                <p class="text-gray-400 mt-2 text-sm leading-relaxed">Pin your hiring drive, hackathon, or junior developer position directly to the top of our job pool. Featured listings stay pinned for 7 days for maximum exposure to freshers.</p>
             </div>
 
             <div class="grid md:grid-cols-5 gap-8 items-start">
@@ -100,7 +100,6 @@
                         <div>
                             <label class="block text-xs font-semibold text-gray-400 mb-1">Fixed Fee (INR)</label>
                             <input type="number" id="amountInput" value="499" class="w-full bg-gray-950 text-white border border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500" readonly>
-                            <p class="text-[11px] text-gray-500 mt-1">Standard structural fee applied per listing submission.</p>
                         </div>
                         <button onclick="generateUPIInvoice()" class="w-full mt-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold py-2.5 rounded-lg text-sm transition">Generate Payment Link & QR</button>
                     </div>
@@ -111,7 +110,7 @@
                     
                     <div id="activeCheckout" class="hidden space-y-4 w-full">
                         <p class="text-xs text-gray-400">Scan via PhonePe, GPay, or Paytm</p>
-                        <div id="qrcode" class="p-3 bg-white rounded-xl inline-block mx-auto shadow-inner"></div>
+                        <div id="qrcode" class="p-3 bg-white inline-block mx-auto rounded-xl"></div>
                         
                         <div class="space-y-2 pt-2">
                             <span class="block text-xl font-mono font-bold text-emerald-400">₹499.00</span>
@@ -125,7 +124,7 @@
     </main>
 
     <footer class="border-t border-gray-800 mt-20 bg-gray-950 py-6 text-center text-xs text-gray-500">
-        <p>&copy; 2026 CSEConnect Platform. All rights reserved.</p>
+        <p>&copy; 2026 WebBridge Platform. All rights reserved.</p>
     </footer>
 
     <script>
@@ -138,20 +137,16 @@
                 return;
             }
 
-            // Target payment metrics extracted from the provided VPA infrastructure
+            // Configured with your details from your QR Code image
             const payeeVPA = "shingareashish15@ybl"; 
             const payeeName = "Ashish Shivaji Shingare";
-            const transactionNote = "Featured Post: " + jobDetails;
+            const transactionNote = "WebBridge Featured: " + jobDetails;
             
-            // Constructing standard clean compliant UPI URL Scheme
-            // Encoded to prevent spaces from breaking deep-linking protocol structures
             const upiUrl = `upi://pay?pa=${encodeURIComponent(payeeVPA)}&pn=${encodeURIComponent(payeeName)}&am=${encodeURIComponent(baseAmount)}&tn=${encodeURIComponent(transactionNote)}&cu=INR`;
 
-            // Clear previous elements inside the QR container box if any exist
             const qrContainer = document.getElementById("qrcode");
             qrContainer.innerHTML = "";
 
-            // Render fresh dynamic client-side QR via the libraries native constructor method
             new QRCode(qrContainer, {
                 text: upiUrl,
                 width: 140,
@@ -161,10 +156,7 @@
                 correctLevel: QRCode.CorrectLevel.M
             });
 
-            // Bind the computed string directly onto the Mobile Intent Link element wrapper
             document.getElementById('upiIntentButton').href = upiUrl;
-
-            // UI Layout Interface State updates
             document.getElementById('placeholderText').classList.add('hidden');
             document.getElementById('activeCheckout').classList.remove('hidden');
         }
