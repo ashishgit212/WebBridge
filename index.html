@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech CSE Freshers Hub</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <header class="border-b border-gray-800 bg-gray-900 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <h1 class="text-2xl font-bold tracking-tight text-indigo-400">CSE<span class="text-emerald-400">Connect</span></h1>
+            <nav class="flex gap-6 text-sm font-medium text-gray-400">
+                <a href="#jobs" class="hover:text-white transition">Job Board</a>
+                <a href="#community" class="hover:text-white transition">Community Discussions</a>
+                <a href="#monetize" class="text-emerald-400 hover:text-emerald-300 font-semibold transition">Post a Featured Job</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-16">
+
+        <section class="text-center max-w-3xl mx-auto space-y-4">
+            <span class="px-3 py-1 text-xs font-semibold bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">Built for B.Tech CSE Graduates</span>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Bridge the Gap from Campus to Career</h2>
+            <p class="text-gray-400 text-lg">A localized platform where unplaced or fresher engineers connect, share active walk-in updates, and collaborate on code projects.</p>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <section id="jobs" class="space-y-6">
+            <div class="flex justify-between items-end">
+                <div>
+                    <h3 class="text-2xl font-bold text-white">Active Openings & Drives</h3>
+                    <p class="text-sm text-gray-400">Verified entry-level software positions and off-campus walks-ins.</p>
+                </div>
+                <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md font-medium border border-emerald-500/20 animate-pulse">Updated Live</span>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <div class="p-5 rounded-xl bg-gradient-to-br from-indigo-950/40 to-gray-900 border border-indigo-500/40 shadow-md relative">
+                    <span class="absolute top-4 right-4 bg-indigo-500 text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">Featured</span>
+                    <span class="text-xs text-indigo-400 font-mono font-semibold">TechCorp Solutions</span>
+                    <h4 class="text-lg font-bold text-white mt-1">Associate Software Engineer (Python/Django)</h4>
+                    <p class="text-sm text-gray-400 mt-2">CTC: ₹6.5 LPA | Experience: 0-1 Year | Remote / Pune</p>
+                    <div class="mt-4 flex gap-2">
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Fast-Track</span>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Immediate Joiner</span>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-gray-900 border border-gray-800 hover:border-gray-700 transition">
+                    <span class="text-xs text-emerald-400 font-mono font-semibold">Innovate Labs</span>
+                    <h4 class="text-lg font-bold text-white mt-1">QA Automation Intern (Selenium/JS)</h4>
+                    <p class="text-sm text-gray-400 mt-2">Stipend: ₹25k/mo | Duration: 6 Months | Bengaluru</p>
+                    <div class="mt-4 flex gap-2">
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Walk-in Drive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <section id="community" class="space-y-6">
+            <div>
+                <h3 class="text-2xl font-bold text-white">Peer Communication Hub</h3>
+                <p class="text-sm text-gray-400">Discuss interview patterns, technical problem loops, and mock interview rooms.</p>
+            </div>
+            
+            <div class="p-8 text-center rounded-xl border border-dashed border-gray-800 bg-gray-950/30 space-y-4">
+                <p class="text-gray-300 max-w-md mx-auto text-sm">To ensure real-time interaction without maintaining heavy servers, our community thrives inside GitHub Discussions and live messaging server hooks.</p>
+                <div class="flex flex-wrap justify-center gap-4 pt-2">
+                    <a href="#" class="px-4 py-2 text-xs font-semibold bg-gray-800 hover:bg-gray-700 text-white rounded-lg border border-gray-700 transition">Open GitHub Discussions</a>
+                    <a href="#" class="px-4 py-2 text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition">Join Live Discord Server</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <section id="monetize" class="bg-gray-950 rounded-2xl border border-emerald-500/20 p-6 sm:p-10 space-y-8">
+            <div class="max-w-2xl">
+                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wide">For Recruiters & Employers</span>
+                <h3 class="text-3xl font-black text-white mt-1">Get Premium Placement</h3>
+                <p class="text-gray-400 mt-2 text-sm leading-relaxed">Pin your hiring drive, hackathon, or junior developer position directly to the top of our job pool. Featured listings stay pinned for 7 days, giving your brand maximum exposure to thousands of local B.Tech freshers actively seeking jobs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-8 items-start">
+                <div class="md:col-span-3 bg-gray-900 border border-gray-800 rounded-xl p-5 space-y-4">
+                    <h4 class="text-md font-bold text-white border-b border-gray-800 pb-2">Generate Featured Post Invoice</h4>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-400 mb-1">Company & Job Title</label>
+                            <input type="text" id="jobTitleInput" placeholder="e.g., TechCorp - Junior Frontend Engineer" class="w-full bg-gray-950 text-white border border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-400 mb-1">Fixed Fee (INR)</label>
+                            <input type="number" id="amountInput" value="499" class="w-full bg-gray-950 text-white border border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500" readonly>
+                            <p class="text-[11px] text-gray-500 mt-1">Standard structural fee applied per listing submission.</p>
+                        </div>
+                        <button onclick="generateUPIInvoice()" class="w-full mt-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold py-2.5 rounded-lg text-sm transition">Generate Payment Link & QR</button>
+                    </div>
+                </div>
+
+                <div id="paymentDisplayWindow" class="md:col-span-2 bg-gray-900/50 border border-gray-800 rounded-xl p-5 flex flex-col items-center justify-center min-h-[280px] text-center">
+                    <p id="placeholderText" class="text-sm text-gray-500 px-4">Fill out the job details on the left to generate your interactive UPI payment checkout gateway.</p>
+                    
+                    <div id="activeCheckout" class="hidden space-y-4 w-full">
+                        <p class="text-xs text-gray-400">Scan via PhonePe, GPay, or Paytm</p>
+                        <div id="qrcode" class="p-3 bg-white rounded-xl inline-block mx-auto shadow-inner"></div>
+                        
+                        <div class="space-y-2 pt-2">
+                            <span class="block text-xl font-mono font-bold text-emerald-400">₹499.00</span>
+                            <a id="upiIntentButton" href="#" class="inline-block w-full bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold py-2 rounded-lg transition">Tap to Pay via Mobile UPI App</a>
+                            <p class="text-[10px] text-gray-500">After completing payment, email your transaction ref ID alongside the job details to publish your slot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 mt-20 bg-gray-950 py-6 text-center text-xs text-gray-500">
+        <p>&copy; 2026 CSEConnect Platform. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function generateUPIInvoice() {
+            const jobDetails = document.getElementById('jobTitleInput').value.trim();
+            const baseAmount = document.getElementById('amountInput').value;
+            
+            if (!jobDetails) {
+                alert('Please enter your Company Name and Job Title first.');
+                return;
+            }
+
+            // Target payment metrics extracted from the provided VPA infrastructure
+            const payeeVPA = "shingareashish15@ybl"; 
+            const payeeName = "Ashish Shivaji Shingare";
+            const transactionNote = "Featured Post: " + jobDetails;
+            
+            // Constructing standard clean compliant UPI URL Scheme
+            // Encoded to prevent spaces from breaking deep-linking protocol structures
+            const upiUrl = `upi://pay?pa=${encodeURIComponent(payeeVPA)}&pn=${encodeURIComponent(payeeName)}&am=${encodeURIComponent(baseAmount)}&tn=${encodeURIComponent(transactionNote)}&cu=INR`;
+
+            // Clear previous elements inside the QR container box if any exist
+            const qrContainer = document.getElementById("qrcode");
+            qrContainer.innerHTML = "";
+
+            // Render fresh dynamic client-side QR via the libraries native constructor method
+            new QRCode(qrContainer, {
+                text: upiUrl,
+                width: 140,
+                height: 140,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.M
+            });
+
+            // Bind the computed string directly onto the Mobile Intent Link element wrapper
+            document.getElementById('upiIntentButton').href = upiUrl;
+
+            // UI Layout Interface State updates
+            document.getElementById('placeholderText').classList.add('hidden');
+            document.getElementById('activeCheckout').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
